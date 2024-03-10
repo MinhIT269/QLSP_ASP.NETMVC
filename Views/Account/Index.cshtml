@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if(User.Identity.IsAuthenticated) {
+    <h1>Welcome to your Profile Page or you can <a href="/Account/Logout">Logout page</a></h1>
+}else {
+    <h1>Please go to the <a href ="/Account/Login" >Login page</a></h1>
+}
