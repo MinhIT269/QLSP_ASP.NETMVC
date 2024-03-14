@@ -1,21 +1,23 @@
-﻿using ElectroMVC.Models;
+﻿using ElectroMVC.Data;
+using ElectroMVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace ElectroMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ElectroMVCContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ElectroMVCContext context)
         {
-            _logger = logger;
+            _context = context;
         }
-
         public IActionResult Index()
         {
-            return View();
+            var _product = _context.Product.Include(p => p.Brand).Include(p => p.Category);
+            return View(_product.ToList());
         }
 
         public IActionResult Privacy()

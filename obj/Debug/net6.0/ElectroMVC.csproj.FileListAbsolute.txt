@@ -209,9 +209,7 @@ D:\webcore\ElectroMVC\obj\Debug\net6.0\ElectroMVC.RazorAssemblyInfo.cache
 D:\webcore\ElectroMVC\obj\Debug\net6.0\ElectroMVC.RazorAssemblyInfo.cs
 D:\webcore\ElectroMVC\obj\Debug\net6.0\staticwebassets.build.json
 D:\webcore\ElectroMVC\obj\Debug\net6.0\staticwebassets.development.json
-D:\webcore\ElectroMVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\webcore\ElectroMVC\obj\Debug\net6.0\scopedcss\bundle\ElectroMVC.styles.css
-D:\webcore\ElectroMVC\obj\Debug\net6.0\scopedcss\projectbundle\ElectroMVC.bundle.scp.css
 D:\webcore\ElectroMVC\obj\Debug\net6.0\ElectroMVC.csproj.CopyComplete
 D:\webcore\ElectroMVC\obj\Debug\net6.0\ElectroMVC.dll
 D:\webcore\ElectroMVC\obj\Debug\net6.0\refint\ElectroMVC.dll

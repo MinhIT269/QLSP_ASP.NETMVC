@@ -25,7 +25,11 @@ namespace ElectroMVC.Controllers
             var electroMVCContext = _context.Product.Include(p => p.Brand).Include(p => p.Category);
             return View(await electroMVCContext.ToListAsync());
         }
-
+        public async Task<IActionResult> ProductByCategory(int catId)
+        {
+            var electroMVCContext = _context.Product.Include(p => p.Brand).Include(p => p.Category).Where(p => p.CategoryId == catId);
+            return View(await electroMVCContext.ToListAsync());
+        }
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
